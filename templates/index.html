@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+
+    <style>
+         body {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            border: solid black 5px;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .container{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form action="/" method="POST"> 
+            <label for="fromCurrency">From Currency:</label>
+            <input type="text" id="fromCurrency" name="fromCurrency" placeholder="Enter From Currency">
+            <br><br>
+            <label for="toCurrency">To Currency:</label>
+            <input type="text" id="toCurrency" name="toCurrency" placeholder="Enter To Currency">
+            <br><br>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter Amount">
+            <br><br>
+            <input type="submit" value="Convert">
+        </form>
+        {% if result_message %}
+            <p>{{ result_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html

@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:/Users/bhats/OneDrive/Desktop/PYTHON/miniproject/venv/Scripts/activate.bat",
+    "python.testing.pytestEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "C:/Users/bhats/OneDrive/Desktop/PYTHON/miniproject/venv/Scripts/pylint_flask",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask"],
+    "python.analysis.extraPaths": ["C:/Users/bhats/OneDrive/Desktop/PYTHON/miniproject/app.py"]
+}
